@@ -5,6 +5,7 @@ import { unsplashPhotoStore } from "./unsplashPhotoStore";
 
 const rootReducer = combineReducers({
   photos: unsplashPhotoStore,
+ 
 });
 
 export const store = createStore(
