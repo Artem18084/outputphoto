@@ -8,8 +8,8 @@ export default function PhotoItems() {
     <article>
       <section>
         <Link to="/">
-        <GetBackBTN />
-      </Link>
+          <GetBackBTN />
+        </Link>
       </section>
     </article>
   );
