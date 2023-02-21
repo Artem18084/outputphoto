@@ -5,6 +5,7 @@ import GetBackBTN from "../UI/GetBackBTN";
 
 import notFound from "../images/notFound.jpg";
 export default function NoMatch() {
+
   return (
     <article className=" flex justify-center items-center">
       <section className="flex flex-col items-center">

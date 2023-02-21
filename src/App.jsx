@@ -7,7 +7,7 @@ import PhotoItems from "./PhotoItem/PhotoItems";
 
 function App() {
   return (
-    <div className=" h-auto py-1">
+    <div className=" h-screen  py-1">
       <Routes>
         <Route path="/" element={<Gallery />} />
         <Route path="preferredPhoto" element={<PhotoItems />} />

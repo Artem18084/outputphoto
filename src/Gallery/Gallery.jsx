@@ -12,10 +12,11 @@ export default function Gallery() {
     dispatch(fetchPhotos());
   }, []);
   return (
-    <div>
-      <div className=" flex flex-row justify-center  flex-wrap gap-1 ">
+
+    <main>
+      <article className=" flex flex-row justify-center  flex-wrap gap-1 ">
         {photos.length && <Photos photos={photos} />}
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

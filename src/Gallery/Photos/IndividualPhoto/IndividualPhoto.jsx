@@ -1,12 +1,13 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { filterPhotoAction } from "../../../Store/unsplashPhotoStore";
 export default function IndividualPhoto({ photo }) {
   const dispatch = useDispatch();
+  console.log(photo);
 
   return (
-    <div>
+    <section>
       <Link to="preferredPhoto">
         <figure>
           <img
@@ -15,9 +16,11 @@ export default function IndividualPhoto({ photo }) {
             src={photo.urls.small}
             alt="unsplash images"
           />
-          <figcaption>{photo.author}</figcaption>
+          <figcaption>
+            <strong>{photo.user.username}</strong> <br /> {photo.user.name}
+          </figcaption>
         </figure>
       </Link>
-    </div>
+    </section>
   );
 }
